@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challangeee</title>
+    <link rel="stylesheet" href="/course-1/challange1/styles.css" />
+  </head>
+  <body>
+  
+    <div class="ch" id="ch-1">
+      <h2>Challange 1: Your age in day</h2>
+      <div class="flexbox-1">
+        <div>
+          <button type="button" class="btn-1" onclick="ageInDays()">
+            Click me
+          </button>
+        </div>
+        <div>
+          <button type="button" class="btn-2" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="flexbox-1">
+        <div id="flexbox-result"></div>
+      </div>
+    </div>
+
+    <div class="ch" id="ch-2">
+      <h2>Challange 2 : Cat Generator</h2>
+      <button type="button" class="btn-3" onclick="generateCat()"> Generate Cat </button>
+        <div class="flexbox-2" id="flx-2">
+        </div>
+    </div>
+    
+    <div class="ch" id="ch-3"> 
+        <h2>Challange 3: Rock, Paper, Scissors</h2>
+        <div class="flexbox-3" id="flx-3">
+          <img id="rock" src="/course-1/rps/rock.jpg" alt="..." onclick="rpsGame(this)">
+          <img id="paper" src="/course-1/rps/paper.jpg" alt="..." onclick="rpsGame(this)">
+          <img id="scissors" src="/course-1/rps/scissors.jpg" alt="..." onclick="rpsGame(this)">    
+        </div>
+    </div>
+
+    <div class="ch" id="ch-4">
+      <h2>Challange 4: Change buttons color</h2>
+      <div class="flexbox-4" id="flx-4">
+        <form action="" >
+        <select id="modes" onchange="buttonColorChange(this)" >
+          <option value="random">Random</option>
+          <option value="reset">Reset</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+        </select>
+      </form>
+        <button class="btn-4" id="btn-4">Merhaba</button>
+        <button class=btn-5>Merhaba</button>
+        <button class="btn-6">Merhaba</button>
+        <button class="btn-7">Merhaba</button>
+   
+      </div>
+    </div>
+
+     <div class="ch" id="ch-5">
+       <h2> Challange 5: Blackjack Game</h2>
+       <h3><span id="bj-result">Let's Play</span></h3>
+
+       <div class="flexbox-5">
+         <div class="youDiv">
+           <h2>You: <span id="you-bj-result">0</span></h2>
+         </div>
+         <div class="dealerDiv">
+           <h2>Dealer: <span id="dealer-bj-result">0</span></h2>
+         </div>
+       </div>
+
+       <div class="flexbox-6">
+         <div>
+           <button class="btn-1" id="hit">Hit</button>
+           <button class="btn-7" id="stand">Stand</button>
+           <button class="btn-2" id="deal">Deal</button>
+         </div>
+       </div>
+       <div class="flexbox-7">
+         <table>
+           <thead>
+             <tr>
+             <th>Wins</th>
+             <th>Lose</th>
+             <th>Draw</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td id="wins">0</td>
+               <td id="losses"> 0</td>
+               <td id="draws">0</td>
+             </tr>
+           </tbody>
+           
+         </table>
+       </div>
+     </div>
+
+    <script src="/course-1/challange1/script.js"></script>
+  </body>
+</html>
