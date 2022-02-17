@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="msg.html" name="myForm" onsubmit="return(validate());">
+        <input type="text" name="password" id="password"> <br>
+        <input type="text" name="email" id="email"> <br>
+        <button id='submit_btn' type="submit">Click</button>
+
+    </form>
+
+    <input type="text" name="regex" id="regex"> <br>
+    <button id='check_btn' type="button" onclick="emailRegex();">Click</button>
+
+<script src="script.js"></script>    
+</body>
+</html>
