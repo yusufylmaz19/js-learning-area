@@ -337,7 +337,7 @@ const getRandomUserss= async n=>{
   const data = await fetchRandomUsers.json();
   data.results.forEach(user => {
   const { gender, email } = user;
-  console.log(`${gender} ${email}`);   
+  console.log(`${gender} ${email}`);
   });
   return data;
 };
